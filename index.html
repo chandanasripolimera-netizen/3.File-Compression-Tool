@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File Compression Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🗜️ File Compression Tool</h1>
+
+        <p class="subtitle">
+            Compress your files directly in your browser
+        </p>
+
+        <div class="upload-box">
+
+            <label for="fileInput" class="file-label">
+                📁 Choose File
+            </label>
+
+            <input type="file" id="fileInput">
+
+            <p id="fileName">No file selected</p>
+
+            <button id="compressBtn">
+                Compress File
+            </button>
+
+            <button id="resetBtn">
+                Reset
+            </button>
+
+        </div>
+
+        <div class="result-box">
+
+            <h2>Compression Details</h2>
+
+            <div class="details">
+
+                <div class="detail">
+                    <span>Original Size</span>
+                    <strong id="originalSize">-</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Compressed Size</span>
+                    <strong id="compressedSize">-</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Compression Ratio</span>
+                    <strong id="ratio">-</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Space Saved</span>
+                    <strong id="saved">-</strong>
+                </div>
+
+            </div>
+
+            <div id="status"></div>
+
+            <a id="downloadBtn" class="download-btn">
+                ⬇️ Download Compressed File
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

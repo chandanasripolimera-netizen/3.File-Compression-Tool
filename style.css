@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.upload-box {
+    border: 2px dashed #667eea;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    background: #f8f9ff;
+}
+
+.file-label {
+    display: inline-block;
+
+    background: #667eea;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.file-label:hover {
+    background: #5568d9;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileName {
+    margin: 20px 0;
+
+    color: #555;
+
+    word-break: break-word;
+}
+
+button {
+    border: none;
+
+    padding: 12px 22px;
+
+    margin: 5px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+#compressBtn {
+    background: #28a745;
+    color: white;
+}
+
+#compressBtn:hover {
+    background: #218838;
+}
+
+#resetBtn {
+    background: #dc3545;
+    color: white;
+}
+
+#resetBtn:hover {
+    background: #c82333;
+}
+
+.result-box {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #f5f5f5;
+}
+
+.result-box h2 {
+    margin-bottom: 20px;
+
+    color: #333;
+}
+
+.details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.detail {
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.detail span {
+    display: block;
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.detail strong {
+    color: #333;
+
+    font-size: 18px;
+}
+
+#status {
+    margin: 20px 0;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+.download-btn {
+    display: none;
+
+    background: #007bff;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #0069d9;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
